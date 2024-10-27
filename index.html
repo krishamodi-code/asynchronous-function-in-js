@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>JS async</h1>
+    <p id="result"></p>
+    <script>
+        async function product(a, b) {
+            let response = await a * b;
+            display(response);
+        }
+        function display(some) {
+            document.getElementById("result").innerHTML = some;
+        }
+        product(9, 9);
+    </script>
+</body>
+
+</html>
